@@ -59,7 +59,7 @@ abstract public class AbstractEventEmitter<T extends ViewGroup> extends ViewGrou
         return exportedEvents;
     }
 
-    public abstract Map<String, String> customEvents();
+    // public abstract Map<String, String> customEvents();
 
     private boolean shouldDropEvent(String cacheKey, IEvent event) {
         Long lastEventTimestamp = mRateLimitedEvents.get(cacheKey);
